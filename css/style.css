@@ -1,0 +1,164 @@
+/* Establecer variables dentro de ROOT*/
+:root{
+	--color-blue: #0A3871;
+	--color-celeste: #F3F5FC;
+	--color-gris: #D8DFE8;
+	--color--background: var(--color-celeste);
+	
+}
+body{
+	background: var(--color--background);
+	font-family: 'Inter', sans-serif;
+}
+
+textarea{
+	font-family: 'Inter', sans-serif;
+}
+
+/*Header*/
+header{
+	/*background-color: antiquewhite;*/
+	
+}
+.header{
+	/*background-color: aquamarine;*/
+	width: 90%;
+	margin: auto;
+}
+.header__logo{
+	margin-top: 40px;
+	
+}
+
+/*Main*/
+.main{
+	/*background-color: orange;*/
+	width: 78%;
+	margin: auto 40px auto auto;
+	display: grid;
+	grid-template-columns: 2fr 1fr; 
+	min-height: calc(100vh - 91px -72px);
+	align-items:  end;
+}
+/*Left*/
+.left{
+	/*background-color: rgb(137, 43, 226, 0.445);*/
+	height: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.ingreso__texto{
+	width: 60%;
+	font-size: 32px;
+	color: var(--color-blue);
+	resize: none;
+	background: none;
+	border: none;
+}
+.ingreso__texto::placeholder{
+	color: var(--color-blue);
+}
+
+/*.left__footer{
+	background-color: red;
+} */
+
+.left__botones{
+	display: flex;
+	gap: 24px;
+	margin-top: 16px;
+	flex-wrap: wrap;
+}
+.boton__encriptar,
+.boton__desencriptar,
+.boton__copiar{
+	border: 1px solid var(--color-blue);
+	cursor: pointer;
+	max-width: 328px;
+	width: 40%;
+	height: 67px;
+	font-size: 16px;
+	border-radius: 24px;
+	/*box-shadow: 0px 24px 32px -8px rgb(0, 0, 0.08);*/
+}
+.boton__encriptar{
+	
+	background-color: var(--color-blue);
+	color: white;
+}
+
+.boton__desencriptar{
+	background-color: var(--color-gris);
+	color: var(--color-blue);
+	
+}
+
+.right{
+	background-color: #ffff;
+	height: calc(100% + 48px);
+	border-radius: 32px;
+	padding: 32px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 32px;
+}
+.righ.ajustar{
+	justify-content: space-between;
+}
+
+.muñeco{
+	width: 100%;
+}
+
+.boton__copiar{
+	width: 100%;
+	background: transparent;
+	color: var(--color-blue);
+}
+.oculto{
+	display: none;
+}
+
+/* footer{
+	background-color: blueviolet;
+	height: 50px; 
+} */
+@media screen and (max-width: 800px) {
+	.main{
+		
+		grid-template-columns: 1fr;
+		grid-template-rows: 75% auto;
+		width: auto;
+		margin: auto 40px;
+	}
+	
+	.left__botones{
+		justify-content: center;
+	}
+	.boton__encriptar,
+	.boton__desencriptar{
+		width: 45%;
+	}
+	.right{
+		height: 100%;
+		
+	}
+	.muñeco{
+		display: none;
+	}
+
+@media screen and (max-width: 500px) {
+	.main{
+		margin: auto 16px;
+	}
+	.boton__encriptar,
+	.boton__desencriptar{
+		max-width: none;
+		width: 100%;
+		}	
+	}
+}
