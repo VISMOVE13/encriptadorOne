@@ -1,49 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Encriptador</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <header>
-        <div class="header">
-           <img class="header__logo" src="./imagenes/logo.png" alt="">
-        </div>
+      <div class="header">
+        <img class="header__logo" src="./imagenes/logo.png" alt="" />
+      </div>
     </header>
 
     <main>
-        <div class="main">
-            <div class="left">
-                <textarea id="ingresoTexto" class="ingreso__texto"
-                placeholder="Ingrese texto aquí"></textarea>
+      <div class="main">
+        <div class="left">
+          <textarea
+            id="ingresoTexto"
+            class="ingreso__texto"
+            placeholder="Ingrese texto aquí"
+          ></textarea>
 
-            <div class="left__footer">
-                <img src="./imagenes/exclamacion.png" alt="">
+          <div class="left__footer">
+            <img src="./imagenes/exclamacion.png" alt="" />
 
-                <div class="left__botones">
-                    <button id="botonEncriptar" class="boton__encriptar">
-                        Encriptar</button>
-                    <button id="botonDesencriptar" class="boton__desencriptar">
-                        Desencriptar</button>
-                </div>    
-                
+            <div class="left__botones">
+              <button id="botonEncriptar" class="boton__encriptar">
+                Encriptar
+              </button>
+              <button id="botonDesencriptar" class="boton__desencriptar">
+                Desencriptar
+              </button>
             </div>
-            
+          </div>
         </div>
 
         <div class="right">
-            <img class="muñeco" src="./imagenes/muñeco.png" alt="">
-            <img src="./imagenes/texto.png" alt="">
-            <button id="botonCopiar" class="boton__copiar oculto">Copiar</button>
+          <img id="muñeco" class="muñeco" src="./imagenes/muñeco.png" alt="" />
+          <div class="">
+            <p id="mensajeFinal" class="mensaje__final">
+              Ningún mensaje fue encontrado
+            </p>
+            <p class="right__info">
+              Ingresa el texto que desees encriptar o desencriptar.
+            </p>
+          </div>
+          <button id="botonCopiar" class="boton__copiar oculto">Copiar</button>
         </div>
-        </div>
-    </main>    
- <!--<footer>
+      </div>
+    </main>
+    <!--<footer>
 </footer> -->
 
-  <script src="./js/script.js"></script>  
-</body>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
