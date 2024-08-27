@@ -8,6 +8,8 @@ const botonCopiar = document.getElementById("botonCopiar");
 
 const mensajefinal = document.getElementById("mensajeFinal");
 
+const fechaActual = document.getElementById("fechaActual");
+
 //e - enter
 //i - imes
 //a - ai
@@ -74,4 +76,4 @@ botonCopiar.addEventListener('click', () => {
 });
 
 
-
+fechaActual.innerHTML = new Date().getFullYear();
